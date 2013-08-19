@@ -44,8 +44,7 @@ module LinkedIn
       end
 
       def sanitize_value(value)
-        value = value.join("+") if value.is_a?(Array)
-        value = value.gsub(" ", "+") if value.is_a?(String)
+        value = value.join(" ") if value.is_a?(Array)
         value
       end
 
